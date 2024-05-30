@@ -11,10 +11,8 @@ Welcome to Didymos's documentation!
    :caption: Contents:
 
 
+.. toctree::
+   :maxdepth: 1
+   :caption: Package Reference
 
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   package_reference/scripts
