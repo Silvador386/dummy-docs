@@ -13,12 +13,8 @@ on:
           - warning
           - debug
 
-#on:
-#  push:
-#    branches:
-#      - docs
-##    paths:
-##      - 'docs/**'
+permissions:
+  contents: write
 
 jobs:
   build:
@@ -35,10 +31,10 @@ jobs:
     - name: Install dependencies
       run: |
         pip install -U pip
-        pip install -U tox
+        pip install sphinx sphinx_rtd_theme myst_parser
     - name: Build HTML
       run: |
-        tox run -e docs
+        sphinx-build docs/source docs/build
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v1
       with:
