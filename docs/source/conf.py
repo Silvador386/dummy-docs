@@ -23,6 +23,7 @@ extensions = [
     # 'sphinx.ext.autosummary',  # for generating function/method/attribute summary lists
     "myst_parser",  # for .md support, see https://github.com/executablebooks/MyST-Parser
     "sphinx.ext.napoleon",  # for NumPy and Google style docstrings support
+    "sphinx.ext.githubpages",
 ]
 
 
